@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unpopular People in the Bible</title>
+    <style>
+        /* Reset basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('https://via.placeholder.com/1920x700/1a1a1a/ffffff?text=Bible+Heroes+%26+Villains');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+        }
+
+        /* Profiles Section */
+        .profiles {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+        }
+
+        .profile-card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .profile-card h2 {
+            font-size: 1.75rem;
+            margin-bottom: 15px;
+        }
+
+        .profile-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Hover Effects */
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-card:hover h2 {
+            color: #e64a19;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        footer p {
+            font-size: 0.875rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Unpopular People in the Bible</h1>
+            <p>Discover the untold stories of lesser-known figures.</p>
+        </div>
+    </header>
+
+    <section class="profiles">
+        <div class="profile-card" id="joab">
+            <h2><a href='another_page.html'>Joab </a></h2>
+            <p>Joab was the commander of King David's army. Despite his loyalty, he was known for his ruthlessness and rebellion against the king.</p>
+        </div>
+        <div class="profile-card" id="jezebel">
+            <h2><a href='jezebel.html'> Jezebel</a></h2>
+            <p>Jezebel was a queen known for her wickedness, leading Israel into idolatry and influencing her husband, King Ahab.</p>
+        </div>
+        <div class="profile-card" id="cain">
+            <h2><a href='Cain.html'>Cain </a></h2>
+            <p>Cain, the firstborn son of Adam and Eve, became notorious for committing the first murder by killing his brother Abel.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Unpopular People in the Bible</p>
+    </footer>
+
+    <script>
+        // Simple Animation Trigger (example)
+        document.addEventListener("DOMContentLoaded", function() {
+            const profileCards = document.querySelectorAll('.profile-card');
+            profileCards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.2}s`;  // Stagger the animation
+            });
+        });
+    </script>
+</body>
+</html>
